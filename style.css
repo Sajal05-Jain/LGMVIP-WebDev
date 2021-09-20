@@ -1,0 +1,274 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar{
+          display: flex;
+          align-items: center;
+          padding: 20px;
+          
+}
+     nav{
+         flex: 1;
+         text-align: right;
+     }
+   nav ul li{
+        display:inline-block;
+        
+      }
+    nav ul li a {
+        text-decoration: none;
+        padding: 12px;
+        color:blue;
+        float:'right';
+    }
+    nav ul li a:hover{
+        color:  black;
+    }
+    .container{
+        max-width: 1300px;
+        margin: auto;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    .row{          /*Arrangement of all the pics*/
+        display: flex;   
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .col-2{     /*Football ki pics ko side kra*/
+        flex-basis: 50%;
+        min-width: 300px;
+    }
+    .col-2 img{
+        max-width: 100%;
+        padding:50px 0;
+    }
+    .col-2 h1{
+        font-size: 50px;
+        line-height: 60px;
+        margin: 25px 0px;
+    }
+    .btn{
+        display: inline-block;
+        background:  #ff523b;
+        color: #fff;
+        padding: 8px 30px;
+        margin: 30px 0px;
+        border-radius: 30px;
+        transition: background 0.5s;
+    }
+    .header{
+        background: radial-gradient(#fff,#ffd6d6);
+    }
+    .header .row{    /*Give wali stmt ko upar neeche krna*/
+       margin-top: 70px;
+    }
+    .btn:hover{
+        background: #563434;
+    }
+    .categories{
+        margin: 70px;
+    }
+     .col-3{               /*FOR UPPER 3 PICS*/
+         flex-basis: 30%;
+         min-width: 250px;
+         margin-bottom: 30px;
+     }
+     .col-3 img{        /*FOR THE DIFFERENCE BETWEEN THE 3 PICS*/
+         width: 100%;
+     }
+     .small-container{      /*FOR THE PIC OF WATCH THE DIFFERENCE BETWEEN THE WATCH AND THE ABOVE PICS*/
+         max-width: 1080px;
+         margin: auto;
+         padding-left: 25px;
+         padding-right: 25px;
+     }
+     .col-4{                 /*FOR THE NEXT PICS IN THE COLOUMNS*/
+         flex-basis: 25%;
+         padding:10px;
+         min-width: 200px;
+         margin-bottom: 50px;
+         transition: transform 0.5s;
+     }
+     .col-4 img{            /*FOR THE DIFFERENCE BETWEEN THE IMAGES*/
+         width: 100%;
+     }
+     .title{                   /*TITLE ALIGNMENT i.e. FEATURED AND LATEST*/
+         text-align: center;
+           margin: 0 auto 80px;
+       position: relative;
+       line-height: 60px;
+       color: #555;
+     }
+     .title::after{           /*UNDERLINE UNDER THE FEATURED AND LATEST*/
+         content: " ";
+         background: #ff523b;
+         width: 80px;
+         height: 5px;
+         border-radius: 5px;
+         position: absolute;
+         bottom: 0px;
+         left: 50%;
+         transform: translateX(-50%);
+     }
+   
+    .col-4 p{
+        font-size: 14px;
+    }
+    .rating .fa{
+        color: #ff523b;
+    }
+  .col-4 :hover{
+        transform: translateY(-5px);
+  }     
+  .offer{
+      background: radial-gradient(#fff,#ffd6d6);
+      margin-top: 80px;
+      padding:30px, 0px;
+  }
+  .col-2 .offer-img{
+         padding: 50px;
+  }
+    small{
+        color: #555;
+    }
+
+    .testimonial{     /*TO DOWN THE WHOLE TEXT*/
+        padding-top: 100px;
+    }
+    .testimonial .col-3{     /*FOR THE QUOTES OF THE WRITERS*/
+        text-align: center;
+        padding: 40px 20px;
+        box-shadow: 0 0 20px 0px rgba(0, 0, 0, 1);
+        cursor: pointer;
+        transition: transform 0.5s;
+    }
+    .testimonial .col-3 img{    /*FOR THE IMAGES OF THE WRITERS*/
+               width: 50px;
+               margin-top: 20px;
+               border-radius: 50%;
+    }
+    .testimonial .col-3:hover{
+        transform: translateY(-10px);
+    } 
+    .fa .fa-quote-left{
+        font-size: 34px;
+        color: #ff523b;
+    }
+    .col-3:p{
+        font-size: 12px;
+        margin: 12px 0px;
+        color: #777;
+    }
+    .testimonial .col-3 h3{
+        font-weight: 600;
+        color: #555;
+        font-size: 16px;
+    }
+
+    .brands{
+        margin: 100px auto;
+    }
+     .col-5{
+         width: 160px;
+     }
+     .col-5 img{
+         width: 100%;
+         cursor: pointer;
+         filter: grayscale(100%);
+     }
+     .col-5 img:hover{
+        filter: grayscale(0%);
+     }
+
+     .footer{
+         background: #000;
+         color: #8a8a8a;
+         font-size: 14px;
+         padding: 60px 0 20px;
+     }
+     .footer p{
+         color: #8a8a8a;
+     }
+       .footer h3{
+           color: #fff;
+           margin-bottom: 20px;
+       }
+       .footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4 {
+           min-width: 250px;
+           margin-bottom: 20px;
+       }
+       .footer-col-1{
+           flex-basis: 30%;
+            }
+      .footer-col-2{
+          flex: 1;
+          text-align: center;
+      }
+      .footer-col-2 img{
+          width: 180px;
+          margin-bottom: 20px;
+      }
+      .footer-col-3, .footer-col-4{
+           flex-basis: 12%;
+           text-align: center;
+      }
+      ul{
+          list-style-type: none;
+      }
+      .applogo{
+          margin-top: 20px;
+      }
+      .applogo img{
+          width: 140px;
+      }
+      .footer hr{
+          border: none;
+          background: #b5b5b5;
+          height: 1px;
+          margin: 20px 0;
+      }
+      .copyright{
+          text-align: center;
+      }
+      .menu-icon{
+           width: 28px;
+           margin-left: 20px;
+           display: none;
+      }
+
+      /* ===== media query for menu ===== */
+
+      @media  only screen and (max-width: 800px){
+
+       nav ul{
+           position: absolute;
+           top: 70px;
+           left: 0px;
+           background: #333;
+           width: 100%;
+           overflow: hidden;
+           transition: 0.5s;
+       }
+       nav ul li{
+           display: block;
+           margin-right: 50px;
+           margin-top: 10px;
+           margin-bottom: 10px;
+       }
+       nav ul li a{
+           color: #fff;
+       }
+       .menu-icon{
+           display: block;
+           cursor: pointer;
+       }
+    }
+
+      
+          
+      
